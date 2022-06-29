@@ -1,0 +1,73 @@
+whoami --> returns current user name
+id --> identity user id & group id
+id -u --> return integer user id
+df --> disk free
+df -h --> result into readable format
+df ~ --> shows dist data on user allocated root memory
+top --> shows tasks running on system
+echo --> use to print anything 
+echo $PATH -> print the PATH veriable data
+date --> shows timestamp
+man --> shows manual for a command
+pwd --> present working directory
+ls --> list the contents
+ls -l --> shows as a list format
+find -name a.txt --> finds nestedly for "a.txt"
+find -iname a.txt --> it finds all (not case sensitive) for "a.txt"
+rmdir <folder-name> deletes specific folder
+rm -r <folder-name> it deletes all files along with the container folder
+
+cp src/filename des/filename --> copy source file to dest file
+cp -r src/ des / --> recursively copy all folder and files
+cp src/filename des/ --> copy source file to destination
+
+mv src/filename des/
+mv src/ des/
+
+cat filename.txt --> shows the content of a file
+more filename.txt --> shows content page by page
+head filename.txt --> shows first 10 lines of a file
+head -n 3 filename.txt
+
+tail filename.txt --> last 10 lines of a file
+tail -n 3 filename.txt --> last 3 lines
+
+wc filename.txt --> shows lines, words & characters
+wc -l --> shows line count
+wc -w --> shows word count
+wc -c --> shows character count
+
+sort filename.txt --> show contents in sorted order
+sort -r filename.txt --> show contents in reverse order
+uniq filename.txt
+
+grep ch filename.txt --> global reg expression, here words with ch will print
+grep -i ch filename.txt --> same as above but not case sensitive
+cut -c 2-9 filename.txt --> shows each line from 2 to 9 index
+
+cut -d ' ' -f2 filename.txt --> separate by space and shows second value
+paste first.txt last.txt dob.txt --> shows content column wise
+paste -d ',' first.txt last.txt dob.txt --> shows content column wise , separated
+
+file archiving
+
+tar -cf notes.tar notes --> makes .tar file
+tar -czf notes.tar.gz notes  --> make .tar.gz for windows support
+tar -tf notes.tar notes --> shows content of a tar file
+tar -xf notes.tar notes --> decompress tar file
+tar -xgf notes.tar notes --> decompress tar.gz file
+zip notes.zip notes --> zip a file
+unzip notes.zip notes --> unzip a file
+
+hostname --> shows hostname
+hostname -s -->  shows hostname not locally
+hostname -i --> showws ip of host
+ifconfig --> shows ip information of the host
+ping -c 5 www.google.com --> checks connectivity
+
+curl www.google.com --> receive https protocol html page
+curl www.google.com -o index.html --> saves html to index.html
+wget www.google.com --> web get it shows complete info
+
+
+
