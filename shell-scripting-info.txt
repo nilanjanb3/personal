@@ -1,0 +1,51 @@
+#! /bin/bash --> mandatory to choose interpreter
+
+echo 'echo hello world' >> sample.sh --> it adds the quoted statement into sample.sh
+
+chmod +x sample.sh --> it provides execution permission for all users(self, grp, all)
+
+command1 | command2 --> o/p of command1 will be input of command2
+
+var_name="Nilanjan" --> setting a variable note: no space allowed
+
+echo $var_name --> to print value of a variable
+
+unset var_name --> to clear variable
+
+Environment Variable: used in extended scope, normal scope variable scope ends after terminal kill.
+
+export var_name --> this makes a variable env variable
+
+env | grep "var_name" --> shows the variable & value
+
+echo "$1 each" --> interpret literally but consider metacharacters
+
+echo '$1 each' --> interpret literally only
+
+echo "line1" > eg.txt --> it's just add. it can't append.
+
+echo "line1" >> eg.txt --> appends o/p to a file
+
+err_line 2> err.txt --> redirect error message to err.txt
+
+here=`pwd` or here = $(pwd) it replace command with output
+
+Command line argument:
+
+./script.sh arg1 arg 2 --> here arg1 & arg2 are command line inputs
+
+Script runss in two mode
+1) Batch mode: command1;command2 --> command2 will only execute after command1
+2) Parallel mode: command1 & command2 --> two commands will run simenteniously 
+
+Cron Jobs:
+
+crontab -e --> opens cron tab editor
+# m h  dom mon dow   command --> format of cron jobs
+
+
+
+
+
+
+
